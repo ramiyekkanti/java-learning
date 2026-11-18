@@ -43,6 +43,7 @@ public class RockPaperScissors {
         }while(status.equals("yes"));
 
         System.out.println("\n========== GAME OVER ==========");
-        System.out.println("You won " + score + " times out of " + count + " games.");  
+        System.out.println("You won " + score + " times out of " + count + " games."); 
+        sc.close(); 
     }
 }
