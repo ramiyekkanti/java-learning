@@ -37,5 +37,6 @@ public class SimpleCalculator {
         if(validOperation){
             System.out.println("Result: " + result);
         }
+        sc.close();
     }    
 }
