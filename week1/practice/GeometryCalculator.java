@@ -11,5 +11,6 @@ public class GeometryCalculator {
         System.out.println("The circumference is: " + (2 * Math.PI * radius));
         System.out.println("The area is: " + (Math.PI * Math.pow(radius, 2)));
         System.out.println("The volume of the sphere is: " + (Math.PI * Math.pow(radius, 3) * (4.0 /3.0)));
+        sc.close();
     }
 }
