@@ -12,5 +12,6 @@ public class Hypotenuse {
         double b = sc.nextDouble();
 
         System.out.println("Hypotenuse: " + Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2)) + "cm");
+        sc.close();
     }    
 }
