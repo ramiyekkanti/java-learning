@@ -36,6 +36,17 @@ public class InheritancePractice {
         c.speak();
         d.fetch();
         System.out.println(d.getName());
+
+        // Constructor order (A.java, B.java, C.java)
+        C cc = new C();
+        System.out.println("-----------------");
+        B b = new B();
+
+        // Employee and Manager (Employee.java, Manager.java)
+        Employee e = new Employee("Asha");
+        Manager m = new Manager("Rami", 4);
+        System.out.println(e.describe());
+        System.out.println(m.describe());
     }
 
 }
