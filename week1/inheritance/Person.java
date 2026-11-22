@@ -1,7 +1,7 @@
 package week1.inheritance;
 
 public class Person {
-    final String name;
+    private final String name;
     private int age;
     
     public Person(String name, int age){

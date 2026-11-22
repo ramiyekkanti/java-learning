@@ -1,7 +1,7 @@
 package week1.inheritance;
 
 public class Dog extends Animal{
-    Dog(String name){
+    public Dog(String name){
         super(name);
     }
 
@@ -11,6 +11,6 @@ public class Dog extends Animal{
     }
 
     public void fetch(){
-        System.out.println(super.getName() + " fetches the ball");
+        System.out.println(getName() + " fetches the ball");
     }
 }

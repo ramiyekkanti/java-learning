@@ -1,9 +1,9 @@
 package week1.inheritance;
 
 public class Manager extends Employee{
-    int teamSize;
+    private int teamSize;
 
-    Manager(String name, int teamSize){
+    public Manager(String name, int teamSize){
         super(name);
         this.teamSize = teamSize;
     }

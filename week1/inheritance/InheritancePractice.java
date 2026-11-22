@@ -16,6 +16,9 @@ public class InheritancePractice {
         p.setAge(150);
         System.out.println(p);
 
+        p.setAge(0);
+        System.out.println(p);
+
         p.setAge(28);
         System.out.println(p);
 

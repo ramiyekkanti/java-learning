@@ -1,7 +1,7 @@
 package week1.inheritance;
 
 public class Cat extends Animal{
-    Cat(String name){
+    public Cat(String name){
         super(name);
     }
     

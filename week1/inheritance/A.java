@@ -1,7 +1,7 @@
 package week1.inheritance;
 
 public class A {
-    A(){
+    public A(){
         System.out.println("A constructor");
     }
 }
