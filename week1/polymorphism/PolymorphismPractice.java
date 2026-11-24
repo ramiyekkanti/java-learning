@@ -18,6 +18,7 @@ public class PolymorphismPractice {
         }
 
         System.out.println("Total area: " + String.format("%.2f", total));
+        System.out.println("----------------------------------------------------------");
 
         // Payable, Hourly, Salaried Classes
         Payable[] workers = {
@@ -28,6 +29,46 @@ public class PolymorphismPractice {
         for(Payable worker : workers){
             System.out.println("Pay: " + String.format("%.2f", worker.pay()));
             System.out.println("With 10% bonus: " + String.format("%.2f", worker.payWithBonus(10)));
+        System.out.println("----------------------------------------------------------");
         }
+
+        // Flyable, Swimmable, Duck, Fish, and Airplane
+        Flyable[] fliers = {
+            new Duck(),
+            new Airplane()
+        };
+        
+        for(Flyable f : fliers){
+            f.fly();
+        }
+
+        Swimmable[] swimmers = {
+            new Duck(),
+            new Fish()
+        };
+        
+        for(Swimmable s : swimmers){
+            s.swim();
+        }
+        System.out.println("----------------------------------------------------------");
+        
+
+        // Shapes
+        Shape[] mixed = {
+            new Circle(1),
+            new Rectangle(2, 2),
+            new Circle(3)
+        };
+        int circles = 0;
+
+        for(Shape shape : mixed){
+            if(shape instanceof Circle c){
+                circles++;
+                System.out.println("Radius: "+ c.getRadius());
+            }
+        }
+        System.out.println("Circles: " + circles);
+        System.out.println("----------------------------------------------------------");
+        
     }
 }
