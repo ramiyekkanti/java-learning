@@ -1,10 +1,10 @@
 package week1.polymorphism;
 
 public class Triangle extends Shape{
-    double base;
-    double height;
+    private double base;
+    private double height;
 
-    Triangle(double base, double height){
+    public Triangle(double base, double height){
         super("Triangle");
         this.base = base;
         this.height = height;

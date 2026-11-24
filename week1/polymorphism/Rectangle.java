@@ -1,10 +1,10 @@
 package week1.polymorphism;
 
 public class Rectangle extends Shape{
-    double width;
-    double height;
+    private double width;
+    private double height;
 
-    Rectangle(double width, double height){
+    public Rectangle(double width, double height){
         super("Rectangle");
         this.width = width;
         this.height = height;

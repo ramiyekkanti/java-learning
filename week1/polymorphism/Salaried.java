@@ -1,9 +1,9 @@
 package week1.polymorphism;
 
 public class Salaried implements Payable{
-    double monthly;
+    private double monthly;
 
-    Salaried(double monthly){
+    public Salaried(double monthly){
         this.monthly = monthly;
     }
 

@@ -1,10 +1,10 @@
 package week1.polymorphism;
 
 public class Hourly implements Payable {
-    double rate;
-    double hours;
+    private double rate;
+    private double hours;
 
-    Hourly(double rate, double hours){
+    public Hourly(double rate, double hours){
         this.rate = rate;
         this.hours = hours;
     }

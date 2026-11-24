@@ -29,8 +29,9 @@ public class PolymorphismPractice {
         for(Payable worker : workers){
             System.out.println("Pay: " + String.format("%.2f", worker.pay()));
             System.out.println("With 10% bonus: " + String.format("%.2f", worker.payWithBonus(10)));
-        System.out.println("----------------------------------------------------------");
         }
+        System.out.println("----------------------------------------------------------");
+        
 
         // Flyable, Swimmable, Duck, Fish, and Airplane
         Flyable[] fliers = {

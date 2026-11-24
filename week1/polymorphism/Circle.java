@@ -1,9 +1,9 @@
 package week1.polymorphism;
 
 public class Circle extends Shape{
-    double radius;
+    private double radius;
 
-    Circle(double radius){
+    public Circle(double radius){
         super("Circle");
         this.radius = radius;
     }
