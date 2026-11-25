@@ -1,3 +1,4 @@
+package concept.syntax;
 public class PrintF {
     // printf() = A method used to format and print output.
     // Syntax = % [flags] [width] [.precision] [character-specifier]

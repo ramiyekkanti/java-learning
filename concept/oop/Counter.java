@@ -1,4 +1,4 @@
-package week1.oop;
+package concept.oop;
 
 public class Counter {
     private int value;

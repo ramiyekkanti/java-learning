@@ -1,4 +1,4 @@
-package week1.practice;
+package concept.practice;
 import java.util.Scanner;
 
 // A multiple-choice Java quiz game that displays questions and four answer options.

@@ -1,4 +1,4 @@
-package week1.polymorphism;
+package concept.polymorphism;
 
 public class Rectangle extends Shape{
     private double width;

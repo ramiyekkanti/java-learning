@@ -1,4 +1,4 @@
-package week1.practice;
+package concept.practice;
 import java.util.Random;
 import java.util.Scanner;
 

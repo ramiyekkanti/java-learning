@@ -1,4 +1,4 @@
-package week1.practice;
+package concept.practice;
 import java.util.Scanner;
 
 // Find the hypotenuse sqrt(a^2 + b^2) of a right angled triangle.

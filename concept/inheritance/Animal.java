@@ -1,4 +1,4 @@
-package week1.inheritance;
+package concept.inheritance;
 
 public class Animal {
     private String name;

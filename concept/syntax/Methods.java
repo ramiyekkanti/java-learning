@@ -1,3 +1,4 @@
+package concept.syntax;
 public class Methods {
     public static void main(String[] args){
         // Prediction: 7

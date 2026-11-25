@@ -1,3 +1,4 @@
+package concept.syntax;
 // Demonstrates 2D arrays and jagged arrays in Java.
 // Uses nested enhanced for loops to iterate through and print array elements.
 // Shows how 2D arrays can represent structured data with equal or different row lengths.

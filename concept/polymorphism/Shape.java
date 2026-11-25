@@ -1,4 +1,4 @@
-package week1.polymorphism;
+package concept.polymorphism;
 
 public abstract class Shape {
     private String name;

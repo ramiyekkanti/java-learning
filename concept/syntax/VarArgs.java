@@ -1,3 +1,4 @@
+package concept.syntax;
 // Varargs (variable-length arguments) allows a method to accept zero or more arguments of the specified type.
 // The ... syntax allows us to pass multiple individual values or an existing array without explicitly creating an array.
 // Inside the method, varargs is treated as an array, which we can iterate through using a loop.

@@ -1,4 +1,4 @@
-package week1.polymorphism;
+package concept.polymorphism;
 
 public class Airplane implements Flyable{
     @Override

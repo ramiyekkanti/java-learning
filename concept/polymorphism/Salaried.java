@@ -1,4 +1,4 @@
-package week1.polymorphism;
+package concept.polymorphism;
 
 public class Salaried implements Payable{
     private double monthly;

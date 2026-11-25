@@ -1,4 +1,4 @@
-package week1.inheritance;
+package concept.inheritance;
 
 public class Cat extends Animal{
     public Cat(String name){

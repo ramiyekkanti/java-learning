@@ -1,4 +1,4 @@
-package week1.strings;
+package concept.strings;
 
 public class StringPractice {
     public static void main(String[] args){
