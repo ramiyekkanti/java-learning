@@ -35,10 +35,96 @@ public class StringPractice {
 
 
         System.out.println(describeRecord("Asha,28,Pune"));
+        System.out.println("------------------------------------------------------");
         
+        
+        System.out.println(receipt(
+            new String[] {"Pen", "Notebook", "Eraser"}, 
+            new int[] {3, 2, 5}, 
+            new int[] {10, 45, 5}
+        ));
+        System.out.println(receipt(
+            new String[] {}, 
+            new int[] {}, 
+            new int[] {}
+        ));
+        System.out.println("------------------------------------------------------");
+
+        System.out.println(mask("9876543210"));
+        System.out.println(mask("ABCDEFGHI"));
+        System.out.println(mask("1234"));
+        System.out.println(mask("12"));
+        System.out.println(mask(""));
+        System.out.println("------------------------------------------------------");
+
+        System.out.println(parseAndSum("10, 20,30 , 40"));
+        System.out.println(parseAndSum("5"));
+        System.out.println(parseAndSum("-3,3"));
+        System.out.println("------------------------------------------------------");
+
+        stringIdentity();
+        System.out.println("------------------------------------------------------");
+
     }
 
     // Functions
+    public static void stringIdentity(){
+        String a = "java";
+        String b = "java";
+        String c = new String("java");
+
+        System.out.println("a == b: " + (a == b));
+        System.out.println("a == c: " + (a == c));
+        System.out.println("a.equals(c): " + a.equals(c));
+
+        String s = "hi";
+        s.toUpperCase();
+        System.out.println(s);
+
+        s = s.toUpperCase();
+        System.out.println(s);
+
+    }
+
+    public static int parseAndSum(String s){
+        int total = 0;
+
+        for(String num : s.split(",")){
+            int n = Integer.parseInt(num.trim());
+            total += n;
+        }
+        return total;
+    } 
+
+    public static String mask(String s){
+        if(s.length() < 5) return s;
+
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0; i < s.length(); i++){
+            if(i < s.length() - 4) sb.append("*");
+            else sb.append(s.charAt(i));
+        }
+        return sb.toString();
+    }
+
+    public static String receipt(String[] items, int[] quantities, int[] prices){
+        StringBuilder sb = new StringBuilder();
+        int total = 0;
+
+        for(int i = 0; i < items.length; i++){
+            sb.append(items[i])
+            .append(" x")
+            .append(quantities[i])
+            .append(" = ")
+            .append((prices[i] * quantities[i]))
+            .append("\n");
+
+            total += prices[i] * quantities[i];
+        }
+        sb.append("Total: " + total);
+        return sb.toString();
+    }
+
     public static String describeRecord(String line){
         String[] words = line.trim().split(",");
         
